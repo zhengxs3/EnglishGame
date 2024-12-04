@@ -1,0 +1,303 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    height: 60px; /* 固定像素高度 */
+    background-color: #96c3f6;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: "Gill Sans", sans-serif;
+}
+
+main {
+    margin-top: 60px;  /* 相同的固定像素高度 */
+    width: 100%;
+    /* box-sizing: border-box;
+    overflow-y: auto; */
+    font-family: "Gill Sans", sans-serif;
+}
+
+
+/* 确保body或主容器没有默认的外边距 */
+body, .main-container {
+    margin: 0;
+    padding: 0;
+}
+
+#menu-content {
+    display: none; /* 初始隐藏菜单内容 */
+    height: auto;
+    width: auto;
+    background-color: #d0f78d; /* 可选背景色 */
+    margin-left: -10px;
+}
+
+a {
+    text-decoration: none; 
+    color: black;
+}
+
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjust based on your preference */
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+label {
+    font-size: 2em;
+    margin: 20px 0;
+}
+button {
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50px; /* Ensures that buttons have the same width */
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*-----------------------------------------------------------*/
+
+.img-auto-auto{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content-auto-auto{
+    width: auto;
+    height: auto;
+}
+
+.content-20p-100p{
+    width: 20%;
+    height: 100%;
+}
+.content-50p-100p{
+    width: 50%;
+    height: 100%;
+}
+.content-60p-100p{
+    width: 60%;
+    height: 100%;
+}
+.content-70p-100p{
+    width: 70%;
+    height: 100%;
+}
+.content-80p-100p{
+    width: 80%;
+    height: 100%;
+}
+.content-80p-auto{
+    width: 80%;
+    height: auto;
+}
+.content-100p-auto{
+    width: 100%;
+    height: auto;
+}
+.content-100p-20p{
+    width: 100%;
+    height: 20%;
+}
+.content-100p-100p{
+    width: 100%;
+    height: 100%;
+}
+.content-auto-100p{
+    width: auto;
+    height: 100%;
+}
+.content-auto-auto{
+    width: auto;
+    height: auto;
+}
+
+
+
+.content-padding-5{
+    padding: 5px;
+}
+.content-padding-10{
+    padding: 10px;
+}
+.content-padding-b-10{
+    padding-bottom: 10px;
+}
+.content-padding-b-15{
+    padding-bottom: 15px;
+}
+.content-padding-b-25{
+    padding-bottom: 25px;
+}
+.content-padding-h-5{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.content-padding-h-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.content-padding-h-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.content-padding-h-25{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.content-padding-l-5{
+    padding-left: 5px;
+}
+.content-padding-l-10{
+    padding-left: 10px;
+}
+.content-padding-l-60{
+    padding-left: 60px;
+}
+.content-padding-l-80{
+    padding-left: 80px;
+}
+
+
+.content-padding-r-5{
+    padding-right: 5px;
+}
+.content-padding-r-10{
+    padding-right: 10px;
+}
+.content-padding-r-60{
+    padding-right: 60px;
+}
+.content-padding-r-80{
+    padding-right: 80px;
+}
+
+.content-padding-t-10{
+    padding-top: 10px;
+}
+
+
+
+
+
+/* text */
+.content-start{
+    align-content: flex-start;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.uppercase-first{
+    display: block;
+}
+.uppercase-first::first-letter{
+    text-transform: uppercase;
+}
+
+.s18{
+    font-size: 18px;
+}
+.s20{
+    font-size: 20px;
+}
+.s22{
+    font-size: 22px;
+}
+.s24{
+    font-size: 24px;
+}
+.s26{
+    font-size: 26px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+
+
+/* flex */
+.flex{
+    display: flex;
+}
+
+.flex-center-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-center-end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.content-center{
+    align-content: center;
+}
+
+
+
+
+/* display */
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+
+
+.pattern {
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 50px;
+}

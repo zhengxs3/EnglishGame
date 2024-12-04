@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="svg\logo Match'P.svg" type="image/x-icon">
+    <title>Match'P</title>
+</head>
+<body>
+    <header>
+        <div class="desktop content-100p-100p content-padding-h-10">
+            <div class="content-60p-100p flex">
+                <div class="content-100p-100p content-center content-padding-h-5">
+                    <img class="img-auto-auto" src="svg\logo Complet.svg">
+                </div>
+                <div class="content-100p-100p content-padding-h-5 content-center">
+                    <div id="concept" style="cursor: pointer;" class="uppercase-first s20 text-center">
+                        concept
+                    </div>
+                </div>
+                <div class="content-100p-100p content-padding-h-5 content-center">
+                    <div id="rules" style="cursor: pointer;" class="uppercase-first s20 text-center">
+                        rules
+                    </div>
+                </div>
+                <div class="content-100p-100p content-padding-h-5 content-center">
+                    <div id="point-counting" style="cursor: pointer;" class="uppercase-first s20 text-center">
+                        point counting
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mobile content-100p-100p">
+            <div class="content-100p-100p flex">
+                <div class="content-100p-100p content-center content-padding-h-5">
+                    <img class="img-auto-auto" src="svg\logo Complet.svg">
+                </div>
+                <div class="content-100p-100p content-center content-padding-h-25">
+                    <div id="dropdown" class="flex-center-end">
+                        <div id="menu-open" style="display: block; cursor: pointer;">
+                            <img class="img-auto-auto" src="svg/dropdown-open.svg" alt="Open Menu">
+                        </div>
+                        <div id="menu-close" style="display: none; cursor: pointer;">
+                            <img class="img-auto-auto" src="svg/dropdown-close.svg" alt="Close Menu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-content" style="display: none;">
+                <div class="content-100p-100p content-padding-h-5 content-center">
+                    <a href="/concept.html" id="concept" class="uppercase-first s20 text-center">
+                        concept
+                    </a>
+                </div>
+                <div class="content-100p-100p content-padding-h-5 content-center">
+                    <a href="/rules.html" id="rules"  class="uppercase-first s20 text-center">
+                        rules
+                    </a>
+                </div>
+                <div class="content-100p-100p content-padding-h-5 content-center">
+                    <a href="/point-counting.html" id="point-counting" class="uppercase-first s20 text-center">
+                        point counting
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <main class="bg-pattern">
+        <br>
+        <img class="pattern" src="./img/top-pattern.png" alt="">
+        <div class=" content-padding-b-15 section">
+            <div class="content-100p-100p content-padding-b-15 content-center">
+                <div class="uppercase-first s26 bold text-center">
+                    rules of the game
+                </div>
+            </div>
+
+            <div class=" content-padding-b-15">
+                <div class="content-100p-100p content-padding-b-15">
+                    <div class="uppercase-first s24 bold">
+                        Equipment :
+                    </div>
+                </div>
+                <div class="uppercase-first s22 content-padding-b-15">
+                    2 packs of Persona cards with different colors to distinguish the difference between player 1 and 2 (16 cards per pack): Each card represents a persona, with specific characteristics such as age, interest, buying behavior, values, skills and devices.
+                </div>
+            </div>
+
+            <div class=" content-padding-b-15">
+                <div class="content-100p-100p content-padding-b-15">
+                    <div class="uppercase-first s24 bold">
+                        Number of participants :
+                    </div>
+                </div>
+                <div class="uppercase-first s22 content-padding-b-15">
+                    2 players confronting each other
+                </div>
+            </div>
+
+            <div class=" content-padding-b-15">
+                <div class="content-100p-100p content-padding-b-15">
+                    <div class="uppercase-first s24 bold">
+                        Objective of the Game
+                    </div>
+                </div>
+                <div class="uppercase-first s22 content-padding-b-15">
+                    The aim of the game is to guess which persona your opponent has chosen by asking closed-ended questions (“yes” or “no” answers). You must be the first to discover the other player's persona.
+                </div>
+            </div>
+
+            <div class="content-100p-100p content-padding-b-15">
+                <div class="content-100p-100p content-padding-b-15">
+                    <div class="uppercase-first s24 bold">
+                        How to Play
+                    </div>
+                </div>
+                <div class="content-padding-b-15">
+                    <div class="uppercase-first s22 content-padding-b-15">
+                        These cards are placed face-up on the table.
+                    </div>
+                    <div class="uppercase-first s22 content-padding-b-15">
+                        A paper is distributed at the beginning where you can find on it all of the personas, to check the one you pick. Each player secretly chooses a persona from the 16 available in their deck.
+                    </div>
+                    <div class="uppercase-first s22 content-padding-b-15">
+                        Players take turns asking closed-ended questions (“yes” or “no” answers) to guess which persona their opponent has chosen.
+                    </div>
+                </div>
+                <div class="content-padding-b-15">
+                    <div class="uppercase-first s22 content-padding-b-15">
+                        Player A begins by asking a closed question about his opponent's characteristics. Example question: Does your persona buy on the Internet?
+                    </div>
+                    <div class="uppercase-first s22 content-padding-b-15">
+                        Player B answers “yes” or “no”. Depending on the answer, Player A must eliminate certain cards from his own deck, to get as close as possible to the persona chosen by his opponent.
+                    </div>
+                    <div class="uppercase-first s22 content-padding-b-15">
+                        If the answer is “no” to the question “Does your persona buy on the Internet?”, player A must eliminate all cards whose persona does not buy on the Internet.
+                    </div>
+                    <div class="uppercase-first s22 content-padding-b-15">
+                        It's the other player's turn to ask a question. The players continue in this way, each taking a turn to ask a question until one of them finds the right persona.
+                    </div>
+                </div>
+                <div class="content-padding-b-15">
+                    <div class="uppercase-first s22 content-padding-b-15">
+                        The first player to guess the opponent's persona wins the game. The player must say:
+                        I think your persona is ...
+                    </div>
+                    <div class="uppercase-first s22 content-padding-b-15">
+                        The game ends as soon as one player correctly guesses the opponent's persona. If a player has eliminated all his cards without guessing the other player's persona, he loses the game.
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-100p-100p content-padding-b-15">
+                <div class="content-100p-100p content-padding-b-15">
+                    <div class="uppercase-first s24 bold">
+                        Cards Rules
+                    </div>
+                </div>
+                <div class="uppercase-first s22 content-padding-b-15">
+                    Be Careful, specific cards exist ! Each time a player has to ask a question, they have to pick a card among the constraint cards to add a touch of difficulty.
+                </div>
+            </div>
+
+            <div class="content-100p-100p content-padding-b-15">
+                <div class="content-100p-100p content-padding-b-15">
+                    <div class="uppercase-first s24 bold">
+                        Prohibition
+                    </div>
+                </div>
+                <div class="uppercase-first s22 content-padding-b-15">
+                    do not ask physical or age-related questions
+                </div>
+            </div>
+
+        </div>
+        <img class="pattern" src="./img/bot-pattern.png" alt="">
+    </main>
+
+    
+</body>
+</html>
