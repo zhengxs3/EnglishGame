@@ -8,7 +8,6 @@
     <script src="point-counting.js" defer></script>
     <link rel="icon" href="svg\logo Match'P.svg" type="image/x-icon">
     <title>Match'P</title>
-</head>
 <body>
     <header>
         <div class="desktop content-100p-100p content-padding-h-10">
@@ -76,7 +75,13 @@
         <br>
         <img class="pattern" src="./img/top-pattern.png" alt="">
         <br><br>
-        <div class="tablet">
+        <div class="content-100p-100p content-padding-b-15 content-center">
+            <div class="uppercase-first s26 bold text-center">
+                point counting
+            </div>
+        </div>
+
+        <div class="tablet content-padding-b-25">
             <div class="content-100p-100p flex-center-center">
                 <input id="name1" type="text" class="text-center" placeholder="player name1">
                 <input id="name2" type="text" class="text-center" placeholder="player name2">
@@ -86,21 +91,40 @@
                 <label id="score2" class="content-padding-l-80">0</label>
             </div>
             <div class="content-100p-100p flex-center-center content-padding-b-25">
-                <button id="btnAdd1">+</button>
-                <button id="btnSubtract1">-</button>
-                <div class="content-padding-r-80"></div>
-                <button id="btnAdd2">+</button>
-                <button id="btnSubtract2">-</button>
+                <div class="content-padding-r-5">
+                    <button id="btnAdd1">+</button>
+                </div>
+                <div class="content-padding-l-5 content-padding-r-5">
+                    <button id="btnSubtract1">-</button>
+                </div>
+                <div class="content-padding-r-5 content-padding-l-5">
+                    <button id="btnAdd2">+</button>
+                </div>
+                <div class="content-padding-l-5">
+                    <button id="btnSubtract2">-</button>
+                </div>
+                
             </div>
             <div class="content-100p-100p flex-center-center">
-                <button id="btnfin">fin</button>
+                <button id="btnfin">Finish</button>
             </div>
         </div>
+
+        <div>
+            <div class="flex_card" id="cardContainer">
+                <!-- 卡片将通过 JS 动态生成 -->
+            </div>
+            <div class="content-100p-100p flex-center-center">
+                <button id="validateBtn" style="margin-top: 20px;">Valid</button>
+            </div>
+        </div>
+        
+        
         
         <br>
         <img class="pattern" src="./img/bot-pattern.png" alt="">
     </main>
 
-    
+
 </body>
 </html>
