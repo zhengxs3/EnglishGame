@@ -1,6 +1,6 @@
 /* header */
 document.getElementById('concept').addEventListener('click', function() {
-    window.location.href = 'concept.html';
+    window.location.href = 'index.html';
 });
 document.getElementById('rules').addEventListener('click', function() {
     window.location.href = 'rules.html';

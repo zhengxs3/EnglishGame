@@ -64,18 +64,33 @@ label {
     font-size: 2em;
     margin: 20px 0;
 }
-button {
+.btn_blue {
     padding: 10px;
     font-size: 1em;
     color: white;
-    background-color: #007bff;
+    background-color: #041B56;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 80px; /* Ensures that buttons have the same width */
 }
-button:hover {
-    background-color: #0056b3;
+.btn_blue:hover {
+    background-color: #8fbef0;
+    color: #041B56;
+}
+.btn_red {
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #BF1818;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px; /* Ensures that buttons have the same width */
+}
+.btn_red:hover {
+    background-color: #f18f8f;
+    color: #BF1818;
 }
 
 /*-----card-------------------*/
