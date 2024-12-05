@@ -1,5 +1,5 @@
 /* header */
-document.getElementById('concept').addEventListener('click', function() {
+document.getElementById('index').addEventListener('click', function() {
     window.location.href = 'index.html';
 });
 document.getElementById('rules').addEventListener('click', function() {
