@@ -5,7 +5,7 @@ header {
     left: 0;
     padding: 5px;
     height: 60px; /* 固定像素高度 */
-    background-color: #96c3f6;
+    background-color: #FDE8E9;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     font-family: "Gill Sans", sans-serif;
 }
@@ -29,7 +29,7 @@ body, .main-container {
     display: none; /* 初始隐藏菜单内容 */
     height: auto;
     width: auto;
-    background-color: #d0f78d; /* 可选背景色 */
+    background-color: #FDE8E9; /* 可选背景色 */
     margin-left: -10px;
 }
 
@@ -72,13 +72,45 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 50px; /* Ensures that buttons have the same width */
+    width: 80px; /* Ensures that buttons have the same width */
 }
 button:hover {
     background-color: #0056b3;
 }
 
+/*-----card-------------------*/
+.flex_card {
+    display: flex;
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: space-between; /* 均匀分布每一行的卡片 */
+    gap: 10px; /* 卡片间距 */
+}
 
+/* 卡片容器样式 */
+.flex_card > div {
+    box-sizing: border-box; /* 包括 padding 和 border */
+    background-color: #f5f5f5; /* 背景色 */
+    padding: 10px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+    text-align: center; /* 居中对齐 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+    cursor: pointer; /* 鼠标悬停效果 */
+}
+
+.img-auto-auto_card {
+    width: 100%; /* 图片宽度适配父容器 */
+    height: auto; /* 保持图片比例 */
+    border-radius: 5px; /* 圆角图片 */
+}
+
+.selected {
+    border: 5px solid #041B56;
+}
+
+.disabled {
+    pointer-events: none;
+    
+}
 
 /*-----------------------------------------------------------*/
 
@@ -191,6 +223,9 @@ button:hover {
     padding-right: 5px;
 }
 .content-padding-r-10{
+    padding-right: 10px;
+}
+.content-padding-r-20{
     padding-right: 10px;
 }
 .content-padding-r-60{
