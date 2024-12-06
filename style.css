@@ -3,7 +3,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 5px;
+    padding: 10px;
     height: 70px; /* 固定像素高度 */
     background-color: #FDE8E9;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -11,7 +11,7 @@ header {
 }
 
 main {
-    margin-top: 60px;  /* 相同的固定像素高度 */
+    margin-top: 70px;  /* 相同的固定像素高度 */
     width: 100%;
     /* box-sizing: border-box;
     overflow-y: auto; */
@@ -365,6 +365,13 @@ label {
         height: 60px; /* 固定像素高度 */
         background-color: #FDE8E9;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        font-family: "Gill Sans", sans-serif;
+    }
+    main {
+        margin-top: 60px;  /* 相同的固定像素高度 */
+        width: 100%;
+        /* box-sizing: border-box;
+        overflow-y: auto; */
         font-family: "Gill Sans", sans-serif;
     }
     
