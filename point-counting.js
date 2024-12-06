@@ -41,6 +41,15 @@ document.getElementById('btnfin').addEventListener('click', function() {
     var score2 = document.getElementById('score2');
     var name1 = document.getElementById('name1'); 
     var name2 = document.getElementById('name2');
+    var winElement = document.getElementById('win');
+
+    if (parseInt(score1.textContent) > parseInt(score2.textContent)) {
+        winElement.innerHTML = `Congratulations to <span style="color: #BF1818; font-weight: bold;">${name1.value}</span> on winning the victory!`;   
+    } else if (parseInt(score1.textContent) < parseInt(score2.textContent)) {
+        winElement.innerHTML = `Congratulations to <span style="color: #BF1818; font-weight: bold;">${name2.value}</span> on winning the victory!`;
+    } else {
+        winElement.textContent = "It's a tie!";
+    }
 
     score1.textContent = 0;
     score2.textContent = 0;
