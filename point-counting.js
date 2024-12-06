@@ -1,6 +1,13 @@
 document.getElementById('btnAdd1').addEventListener('click', function() {
     var score = document.getElementById('score1');
     score.textContent = parseInt(score.textContent) + 1;
+
+    validateBtn.disabled = false;
+    container.querySelectorAll('.card').forEach(card => {
+        card.classList.remove('disabled', 'selected');
+    });
+
+    selectedCard = null;
 });
     
 document.getElementById('btnSubtract1').addEventListener('click', function() {
@@ -13,6 +20,13 @@ document.getElementById('btnSubtract1').addEventListener('click', function() {
 document.getElementById('btnAdd2').addEventListener('click', function() {
     var score = document.getElementById('score2');
     score.textContent = parseInt(score.textContent) + 1;
+
+    validateBtn.disabled = false;
+    container.querySelectorAll('.card').forEach(card => {
+        card.classList.remove('disabled', 'selected');
+    });
+
+    selectedCard = null;
 });
 
 document.getElementById('btnSubtract2').addEventListener('click', function() {
@@ -40,7 +54,13 @@ document.getElementById('btnfin').addEventListener('click', function() {
     });
 
     selectedCard = null;
-    alert('Game reset! You can now select a new card.');
+
+    const modal = document.getElementById("finModal");
+    modal.style.display = "block";
+
+    document.getElementById("btn_fin").addEventListener('click', () => {
+        modal.style.display = "none"; // Hide modal
+    });
 });
 
 
@@ -71,14 +91,41 @@ for (let i = 1; i <= 16; i++) {
     container.appendChild(cardDiv);
 }
 
+
+// Validate button event listener
 validateBtn.addEventListener('click', () => {
     if (selectedCard) {
-        container.querySelectorAll('.card').forEach(card => {
-            card.classList.add('disabled');
+        const modal = document.getElementById("validModal");
+        const yes = document.getElementById("btn_yes");
+        const no = document.getElementById("btn_no");
+
+        // Show modal
+        modal.style.display = "block";
+
+        // Clear any previous event listeners to avoid duplication
+        yes.replaceWith(yes.cloneNode(true));
+        no.replaceWith(no.cloneNode(true));
+
+        // Add event listener to "Yes" button
+        document.getElementById("btn_yes").addEventListener('click', () => {
+            container.querySelectorAll('.card').forEach(card => {
+                card.classList.add('disabled'); // Disable all cards
+            });
+            validateBtn.disabled = true; // Disable validate button
+            modal.style.display = "none"; // Hide modal
         });
-        validateBtn.disabled = true;
-        alert('Selection confirmed!');
+
+        // Add event listener to "No" button
+        document.getElementById("btn_no").addEventListener('click', () => {
+            modal.style.display = "none"; // Hide modal
+        });
+
     } else {
-        alert('Please select a card before confirming.');
+        const modal = document.getElementById("noSelectCard");
+        modal.style.display = "block";
+
+        document.getElementById("btn_ok").addEventListener('click', () => {
+            modal.style.display = "none"; // Hide modal
+        });
     }
 });
